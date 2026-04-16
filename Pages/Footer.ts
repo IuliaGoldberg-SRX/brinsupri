@@ -58,7 +58,7 @@ export class FooterPage extends BasePage {
   }
 
   async clickPrivacyPolicy() {
-    await this.customClick(this.privacyPolicy);
+    await this.customClick(this.privacyPolicy.nth(0));
     await this.customClick(this.OkBtn);
   }
 
