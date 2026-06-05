@@ -10,7 +10,7 @@ export class HomePage extends BasePage {
   constructor(page: Page) {
     super(page);
     this.study = this.page.locator('a[href="/brinsupri-study-results"]')
-    this.about = this.page.locator('a[href="/about-brinsupri"]')
+    this.about = this.page.locator('a[href="/about-brinsupri/"]')
     this.resources = this.page.locator('a[href="/resources"]')
     this.savings = this.page.locator('a[href="/savings-and-support"]')
   }

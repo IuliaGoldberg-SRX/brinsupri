@@ -39,7 +39,7 @@ test("should show validation errors for empty required fields", async ({ page })
   await signUpPage.email.fill('google')
   await signUpPage.city.click()
   await expect(page.locator('text=Email address should follow the format user@domain.com.')).toBeVisible();
-  await expect(page.locator('text=The Mailing Address cannot be blank.')).toBeVisible();
+  await expect(page.locator('text=The mailing address field cannot be blank.')).toBeVisible();
   await signUpPage.state.click()
   await signUpPage.zipCode.click()
   await expect(page.locator('text=The city field cannot be blank.')).toBeVisible();

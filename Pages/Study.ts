@@ -24,16 +24,19 @@ export class StudyPage extends BasePage {
 
     async clickReducedRiskJump(){
         this.customClick(this.jump.nth(0));
+        await this.page.waitForTimeout(2000);
         expect(this.page).toHaveURL('https://www.brinsupri.com/brinsupri-study-results/#reduction');
     }
 
     async clickHelpedJump(){
         this.customClick(this.jump.nth(1));
+        await this.page.waitForTimeout(2000);
         expect(this.page).toHaveURL('https://www.brinsupri.com/brinsupri-study-results/#flare-free-year');
     }
 
     async clickDeclinedJump(){
         this.customClick(this.jump.nth(2));
+        await this.page.waitForTimeout(2000);
         expect(this.page).toHaveURL('https://www.brinsupri.com/brinsupri-study-results/#lung-function');
     }
 

@@ -15,7 +15,7 @@ export class SignUpPage extends BasePage {
 
     constructor(page: Page) {                           
     super(page);
-    this.not = this.page.locator('button:has-text("I am not prescribed BRINSUPRI")');
+    this.not = this.page.locator('button:has-text("No")');
     this.firstName = this.page.locator('#firstName');
     this.lastName = this.page.locator('#lastName');
     this.email = this.page.locator('#email');
